@@ -1,13 +1,17 @@
 export default function HelloWorld() {
+  const props = {
+    text: "Hello World",
+  };
+
   return (
     <div>
-      <HeaderHelloWorld text="Hello World"/>
+      <HeaderHelloWorld {...props} />
       <ParagraphHelloWorld />
     </div>
   );
 }
 
-function HeaderHelloWorld({text = "ups, lupa kasih text"}) {
+function HeaderHelloWorld({ text = "ups, lupa kasih text" }) {
   return (
     <h1 style={{ color: "red", backgroundColor: "aqua" }}>
       {text.toUpperCase()}
