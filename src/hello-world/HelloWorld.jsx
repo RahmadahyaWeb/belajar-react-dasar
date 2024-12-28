@@ -1,14 +1,13 @@
 export default function HelloWorld() {
   return (
     <div>
-      <HeaderHelloWorld />
+      <HeaderHelloWorld text="Hello World"/>
       <ParagraphHelloWorld />
     </div>
   );
 }
 
-function HeaderHelloWorld() {
-  const text = "Hello World";
+function HeaderHelloWorld({text = "ups, lupa kasih text"}) {
   return (
     <h1 style={{ color: "red", backgroundColor: "aqua" }}>
       {text.toUpperCase()}
