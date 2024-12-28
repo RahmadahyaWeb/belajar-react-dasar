@@ -5,7 +5,7 @@ export default function TodoList() {
     <ul>
       <Todo isCompleted={true} text="Learn HTML" />
       <Todo isCompleted={true} text="Learn CSS" />
-      <Todo isCompleted={true} text="Learn Javascript" />
+      <Todo isCompleted={true} text="Learn Javascript" isDeleted={true} />
       <Todo isCompleted={false} text="Learn ReactJS" />
     </ul>
   );
