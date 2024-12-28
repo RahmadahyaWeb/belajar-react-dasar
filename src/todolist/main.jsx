@@ -5,6 +5,7 @@ import Container from "../Container";
 import AlertButton from "../button/AlertButton";
 import MyButton from "../button/MyButton";
 import Toolbar from "../button/Toolbar";
+import SearchForm from "../form/SearchForm";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -18,6 +19,8 @@ createRoot(document.getElementById("root")).render(
           alert("You click toolbar");
         }}
       />
+
+      <SearchForm />
     </Container>
   </StrictMode>
 );
