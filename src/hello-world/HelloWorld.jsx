@@ -1,8 +1,16 @@
 export default function HelloWorld() {
   return (
     <div>
-      <h1>Hello World</h1>
-      <h1>Belajar ReactJS</h1>
+      <HeaderHelloWorld />
+      <ParagraphHelloWorld />
     </div>
   );
+}
+
+function HeaderHelloWorld() {
+  return <h1>Hello World</h1>;
+}
+
+function ParagraphHelloWorld() {
+  return <p>Belajar ReactJS</p>;
 }
